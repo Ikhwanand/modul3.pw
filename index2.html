@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Praktikum Modul 2</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style2.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+</head>
+<body>
+
+<header>
+  <div class="container">
+    <input type="text" id="input" placeholder="prees Enter to add tasks">
+    <button type="reset" class="reset">Clear</button>
+    <ul></ul>
+</div>
+<script type="text/javascript">
+  $(document).ready(function(){
+      $('#input').change(function(){
+          var input = $(this).val();
+          $('ul').append('<li>' + input + '<i class="fa fa-check" aria-hidden="true"></i><i class="fa fa-trash" aria-hidden="true"></i></li>');
+          $(this).val('');
+      });
+
+      $("button").click(function(){
+        $("li").remove();
+      });
+
+      $('ul').on('click','.fa-trash',function(){
+          $(this).parent('li').fadeOut(200);
+      });
+
+      $('ul').on('click','.fa-check',function(){
+          $(this).parent('li').toggleClass('checked')
+      });
+      
+
+  });
+  </script>
+</header>
+<div class="topnav">
+  <a class="active" href="#home"><i class="fa fa-fw fa-home"></i>Home</a>
+  <a href="#"><i class="fa fa-fw fa-envelope"></i>Contact</a>
+  <a href="profil2.html"><i class="fa fa-fw fa-user"></i>Profil</a>
+  <div class="search-container">
+    <form action="/action_page.php">
+      <input type="text" placeholder="Search.." name="search">
+      <button type="submit"><i class="fa fa-search"></i></button>
+    </form>
+  </div>
+</div>
+
+
+<div class="row">
+  <div class="column side">
+    <h2>Kategori :</h2>
+    <h4>Basketball</h4>
+  </div>
+  
+  <div class="column middle">
+    
+    <div id="continer">
+      <h2>Terbaru</h2>
+      <div class="clearfix">
+        <div class="container2">
+        <img class="img2" src="images/Pelita_Jaya_Hancurkan.jpg" alt="Pelita_Jaya" style="width:100%">
+        <div class="text-block">
+        <a href="https://www.mainbasket.com/r/10190/pelita-jaya-hancurkan-louvre-yang-tampil-tanpa-jamarr-johnson" style="text-decoration:none">
+        <h3>Pelita Jaya Hancurkan Louvre yang Tampil Tanpa Jamarr Johnson</h3></a> 
+        <span class="konten"><b>IBL</b><p>28 Maret 2021 <i class="fa fa-edit"></i>: mainbasket</p></span>
+        </div>
+        </div>
+      </div> <br>
+
+      <div class="clearfix">
+        <div class="container2"> 
+        <img class="img2" src="images/ARIYA-M--9.jpg" alt="ARIYA-M--9" style="width:100%"><a href="https://www.mainbasket.com/r/10189/buat-28-turnover-pacific-mudahkan-satya-wacana-sapu-bersih" style="text-decoration:none">
+        <div class="text-block">
+        <h3>Buat 28 Turnover, Pacific Mudahkan Satya Wacana Sapu Bersih</h3></a>
+        <span class="konten"><b>IBL</b><p>28 Maret 2021 <i class="fa fa-edit"></i>: mainbasket</p></span>
+        </div>
+        </div>
+      </div> <br>
+
+      <div class="clearfix">
+        <div class="container2">
+        <img class="img2" src="images/ARIYA-D--4.jpg" alt="ARIYA-D--4" style="width:100%"><a href="https://www.mainbasket.com/r/10188/rakernas-pp-perbasi-fokus-bahas-fiba-asia-cup-dan-world-cup" style="text-decoration:none">
+          <div class="text-block">
+        <h3>Rakernas PP Perbasi Fokus Bahas FIBA Asia Cup dan World Cup</h3></a>
+        <span class="konten"><b>IBL</b><p>28 Maret 2021 <i class="fa fa-edit"></i>: mainbasket</p></span>
+        </div>
+        </div>
+      </div> <br>
+
+      <div class="clearfix">
+        <div class="container2">
+        <img class="img2" src="images/Satria_Muda.jpg" alt="Satria_Muda" style="width:100%"><a href="https://www.mainbasket.com/r/10187/satria-muda-kembali-ke-puncak-klasemen-divisi-putih" style="text-decoration:none">
+          <div class="text-block2">
+        <h3>Satria Muda Kembali ke Puncak Klasemen Divisi Putih</h3></a>
+        <span class="konten"><b>IBL</b><p>28 Maret 2021 <i class="fa fa-edit"></i>: mainbasket</p></span>
+        </div>
+      </div>
+      </div> <br>
+
+      <div class="clearfix">
+        <div class="container2">
+        <img class="img2" src="images/Kuasai_Paint.jpg" alt="Kuasai_Paint" style="width: 100%"><a href="https://www.mainbasket.com/r/10186/kuasai-paint-area-prawira-akhri-perlawanan-hangtuah" style="text-decoration:none">
+          <div class="text-block2">
+        <h3>Kuasai Paint Area, Prawira Akhri Perlawanan Hangtuah</h3></a>
+        <span class="konten"><b>IBL</b><p>28 Maret 2021 <i class="fa fa-edit"></i>: mainbasket</p></span>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="column side">
+    <h2>Terpopuler</h2>
+    <div id="terpopuler">
+      <div class="clearfix2">
+      <article>
+        <img class="imgberita" src="images/rajon.jpg" alt="Rajon" width="80" height="80"><a href="https://www.mainbasket.com/r/10181/baik-buruk-rajon-rondo-bagi-clippers-hingga-keinginan-pensiun-lou-williams" style="text-decoration:none"><b>
+          Baik-buruk Rajon Rondo Bagi Clippers,<br> Hingga Keinginan Pensiun Lou Williams</b></a></article>
+      </div> <br>
+      <div class="clearfix2">
+    <article>
+      <img class="imgberita" src="images/Pelita_Jaya.jpg" alt="Pelita Jaya" width="80" height="80"><a href="https://www.mainbasket.com/r/10185/pelita-jaya-terlalu-kuat-untuk-bima-perkasa" style="text-decoration:none"><b>
+        Pelita Jaya Terlalu Kuat untuk Bima Perkasa</b></a></article> 
+      </div><br>
+      <div class="clearfix2">
+    <article>
+      <img class="imgberita" src="images/Sepatu_AZA.jpg" alt="Sepatu_AZA" width="80" height="80"><a href="https://www.mainbasket.com/r/10164/sepatu-aza-6-9-dan-jalan-panjang-signature-shoes-azrul-ananda" style="text-decoration:none"><b>
+        Sepatu AZA 6.9 dan Jalan Panjang Signature Shoes Azrul Ananda</b></a></article> 
+        </div><br>
+        <div class="clearfix2">
+    <article>
+      <img class="imgberita" src="images/ARIYA-C--4.jpg" alt="ARIYA-C--4" width="80" height="80"><a href="https://www.mainbasket.com/r/10183/superior-di-paruh-kedua-patriots-sapu-bersih-hangtuah" style="text-decoration:none"><b>
+        Superior di Paruh Kedua, Patriots Sapu Bersih Hangtuah</b></a></article> 
+        </div><br>
+        <div class="clearfix2">
+    <article>
+      <img class="imgberita" src="images/West_Bandits.jpg" alt="West_Bandits" width="80" height="80"><a href="https://www.mainbasket.com/r/10184/west-bandits-lanjutkan-tren-positif-balas-kekalahan-atas-nsh-montain-gold" style="text-decoration:none"><b>
+        West Bandits Lanjutkan Tren Positif, Balas Kekalahan atas NSH Montain Gold</b></a></article>
+        </div>
+      
+    </div>
+  </div>
+</div>
+  
+</body>
+<footer>
+    <div class="footer-content">
+        <h3>About Me</h3>
+        <p>Masih Belajar Web Development</p>
+        <ul class="socials">
+            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+            <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+            <li><a href="#"><i class="fa fa-whatsapp"></i></a></li>
+        </ul>
+    </div>
+    <div class="footer-bottom">
+        <p>. All Right Reserved. Any commercial use or distribution without the express written consent of Mainbasket is strictly prohibited.
+         designed by <span>ikhwananda</span></p>
+    </div>
+</footer>
+</html>
